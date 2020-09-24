@@ -1,0 +1,32 @@
+create soma[2]
+access soma[0]
+forall { diam = 10  L = 100/(PI*diam) insert hh }
+objref stim
+stim = new IClamp(.5)
+stim.amp = 0.5
+stim.dur = 0.1
+soma[0] { gnabar_hh = 0  gkbar_hh = 0  el_hh = -65 gl_hh = .001 }
+
+{load_file("gap_1.ses")} // just a graph that plots soma[0and1].v(.5)
+
+objref gap[2]
+for i=0, 1 soma[i] {
+        gap[i] = new HalfGap(.5)
+        gap[i].r = 100 // MOhm
+}
+
+objref pc
+pc = new ParallelContext()
+for i=0, 1 soma[i] {
+        j = (i+1)%2
+        pc.source_var(&v(.5), i)
+        soma[j] pc.target_var(&gap[j].vgap, i)
+}
+
+{pc.setup_transfer()}
+
+run() // runs properly with single thread
+
+// {load_file("parcom.hoc")}
+// ParallelComputeTool[0].nthread(2)
+// run() // generates error message

@@ -1,0 +1,1 @@
+../templates/synapse//GRANULE_Nmda_leak.mod

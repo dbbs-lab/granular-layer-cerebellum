@@ -1,0 +1,1 @@
+../templates/granule//GRANULE_KV.mod

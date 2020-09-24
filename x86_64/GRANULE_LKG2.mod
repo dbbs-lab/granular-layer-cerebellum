@@ -1,0 +1,1 @@
+../templates/granule//GRANULE_LKG2.mod

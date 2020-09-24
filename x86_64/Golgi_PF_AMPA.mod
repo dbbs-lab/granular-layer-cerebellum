@@ -1,0 +1,1 @@
+../templates/synapse//Golgi_PF_AMPA.mod

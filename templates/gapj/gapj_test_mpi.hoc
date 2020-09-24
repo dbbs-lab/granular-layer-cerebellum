@@ -1,0 +1,56 @@
+
+objref pc
+pc = new ParallelContext()
+rank = int(pc.id())
+size = int(pc.nhost())
+
+create soma
+access soma
+forall { diam = 10  L = 100/(PI*diam) insert hh }
+objref stim
+
+if (rank == 0) {
+    soma stim = new IClamp(.5)
+    stim.amp = 0.5
+    stim.dur = 0.1
+    soma { gnabar_hh = 0  gkbar_hh = 0  el_hh = -65 gl_hh = .001 }
+}	
+
+//if (rank == 0) {
+//print "ses"    
+//load_file("gap.ses")} // just a graph that plots soma[0and1].v(.5)
+
+objref gap
+gap = new HalfGap(.5)
+gap.r = 1e9 // MOhm
+
+//if (rank ==0) {
+    pc.source_var(&v(.5), rank)
+//}
+objref vvec
+vvec = new Vector()
+
+//if (rank ==1) {
+    pc.target_var(gap,&gap.vgap,  (rank+1)%2)
+    vvec.record(&gap.vgap)
+//}
+
+{pc.setup_transfer()}
+init()
+print "run"
+run() // runs properly with single thread
+print "done"
+// objref g
+// if (rank ==0) {
+//     g = new Graph()
+//     g.addvar("soma.v(0.5)")
+//     g.view(0,-80,10,100,100,100,500,500)
+//     vvec.printf()
+// }
+
+pc.done()
+
+quit()
+// {load_file("parcom.hoc")}
+// ParallelComputeTool[0].nthread(2)
+// run() // generates error message

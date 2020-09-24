@@ -1,0 +1,1 @@
+../templates/mossy//vecevent.mod

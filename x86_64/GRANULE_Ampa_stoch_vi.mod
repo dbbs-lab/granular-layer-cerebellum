@@ -1,0 +1,1 @@
+../templates/synapse//GRANULE_Ampa_stoch_vi.mod

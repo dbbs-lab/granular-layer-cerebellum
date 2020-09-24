@@ -1,0 +1,171 @@
+Creating x86_64 directory for .o files.
+
+/home/neuron/projects/rete/control_sims/weasel/templates/golgi
+./Golgi_BK.mod ./Golgi_CALC.mod ./Golgi_CALC_ca2.mod ./Golgi_Ca_HVA.mod ./Golgi_Ca_LVA.mod ./Golgi_KA.mod ./Golgi_KM.mod ./Golgi_KV.mod ./Golgi_Na.mod ./Golgi_NaP.mod ./Golgi_NaR.mod ./Golgi_Pregen.mod ./Golgi_Pregen2.mod ./Golgi_SK2.mod ./Golgi_hcn1.mod ./Golgi_hcn2.mod ./Golgi_lkg.mod ../mossy//vecevent.mod ../synapse//GRANULE_Ampa_det_Prel.mod ../synapse//GRANULE_Ampa_det_vi.mod ../synapse//GRANULE_Ampa_stoch_vi.mod ../synapse//GRANULE_Gaba_det_vi.mod ../synapse//GRANULE_Nmda_det_vi.mod ../synapse//GRANULE_Nmda_leak.mod ../synapse//GRANULE_Nmda_stoch_vi.mod ../synapse//Golgi_PF_AMPA.mod ../synapse//Golgi_PF_NMDA.mod ../gapj//gapj.mod
+Golgi_BK.mod Golgi_CALC.mod Golgi_CALC_ca2.mod Golgi_Ca_HVA.mod Golgi_Ca_LVA.mod Golgi_KA.mod Golgi_KM.mod Golgi_KV.mod Golgi_Na.mod Golgi_NaP.mod Golgi_NaR.mod Golgi_Pregen.mod Golgi_Pregen2.mod Golgi_SK2.mod Golgi_hcn1.mod Golgi_hcn2.mod Golgi_lkg.mod vecevent.mod GRANULE_Ampa_det_Prel.mod GRANULE_Ampa_det_vi.mod GRANULE_Ampa_stoch_vi.mod GRANULE_Gaba_det_vi.mod GRANULE_Nmda_det_vi.mod GRANULE_Nmda_leak.mod GRANULE_Nmda_stoch_vi.mod Golgi_PF_AMPA.mod Golgi_PF_NMDA.mod gapj.mod
+"/home/neuron/nrn75/nrn/x86_64/bin/nocmodl" Golgi_BK
+Translating Golgi_BK.mod into Golgi_BK.c
+Thread Safe
+"/home/neuron/nrn75/nrn/share/nrn/libtool" --tag=CC --mode=compile mpicc -DHAVE_CONFIG_H  -I. -I.. -I"/home/neuron/nrn75/nrn/include/nrn" -I"/home/neuron/nrn75/nrn/x86_64/lib"      -g -O2 -c -o Golgi_BK.lo Golgi_BK.c
+libtool: compile:  mpicc -DHAVE_CONFIG_H -I. -I.. -I/home/neuron/nrn75/nrn/include/nrn -I/home/neuron/nrn75/nrn/x86_64/lib -g -O2 -c Golgi_BK.c  -fPIC -DPIC -o .libs/Golgi_BK.o
+"/home/neuron/nrn75/nrn/x86_64/bin/nocmodl" Golgi_CALC
+Translating Golgi_CALC.mod into Golgi_CALC.c
+Thread Safe
+Warning: Default 2 of PARAMETER cao will be ignored and set by NEURON.
+"/home/neuron/nrn75/nrn/share/nrn/libtool" --tag=CC --mode=compile mpicc -DHAVE_CONFIG_H  -I. -I.. -I"/home/neuron/nrn75/nrn/include/nrn" -I"/home/neuron/nrn75/nrn/x86_64/lib"      -g -O2 -c -o Golgi_CALC.lo Golgi_CALC.c
+libtool: compile:  mpicc -DHAVE_CONFIG_H -I. -I.. -I/home/neuron/nrn75/nrn/include/nrn -I/home/neuron/nrn75/nrn/x86_64/lib -g -O2 -c Golgi_CALC.c  -fPIC -DPIC -o .libs/Golgi_CALC.o
+"/home/neuron/nrn75/nrn/x86_64/bin/nocmodl" Golgi_CALC_ca2
+Translating Golgi_CALC_ca2.mod into Golgi_CALC_ca2.c
+Thread Safe
+"/home/neuron/nrn75/nrn/share/nrn/libtool" --tag=CC --mode=compile mpicc -DHAVE_CONFIG_H  -I. -I.. -I"/home/neuron/nrn75/nrn/include/nrn" -I"/home/neuron/nrn75/nrn/x86_64/lib"      -g -O2 -c -o Golgi_CALC_ca2.lo Golgi_CALC_ca2.c
+libtool: compile:  mpicc -DHAVE_CONFIG_H -I. -I.. -I/home/neuron/nrn75/nrn/include/nrn -I/home/neuron/nrn75/nrn/x86_64/lib -g -O2 -c Golgi_CALC_ca2.c  -fPIC -DPIC -o .libs/Golgi_CALC_ca2.o
+"/home/neuron/nrn75/nrn/x86_64/bin/nocmodl" Golgi_Ca_HVA
+Translating Golgi_Ca_HVA.mod into Golgi_Ca_HVA.c
+Thread Safe
+"/home/neuron/nrn75/nrn/share/nrn/libtool" --tag=CC --mode=compile mpicc -DHAVE_CONFIG_H  -I. -I.. -I"/home/neuron/nrn75/nrn/include/nrn" -I"/home/neuron/nrn75/nrn/x86_64/lib"      -g -O2 -c -o Golgi_Ca_HVA.lo Golgi_Ca_HVA.c
+libtool: compile:  mpicc -DHAVE_CONFIG_H -I. -I.. -I/home/neuron/nrn75/nrn/include/nrn -I/home/neuron/nrn75/nrn/x86_64/lib -g -O2 -c Golgi_Ca_HVA.c  -fPIC -DPIC -o .libs/Golgi_Ca_HVA.o
+"/home/neuron/nrn75/nrn/x86_64/bin/nocmodl" Golgi_Ca_LVA
+Translating Golgi_Ca_LVA.mod into Golgi_Ca_LVA.c
+Thread Safe
+"/home/neuron/nrn75/nrn/share/nrn/libtool" --tag=CC --mode=compile mpicc -DHAVE_CONFIG_H  -I. -I.. -I"/home/neuron/nrn75/nrn/include/nrn" -I"/home/neuron/nrn75/nrn/x86_64/lib"      -g -O2 -c -o Golgi_Ca_LVA.lo Golgi_Ca_LVA.c
+libtool: compile:  mpicc -DHAVE_CONFIG_H -I. -I.. -I/home/neuron/nrn75/nrn/include/nrn -I/home/neuron/nrn75/nrn/x86_64/lib -g -O2 -c Golgi_Ca_LVA.c  -fPIC -DPIC -o .libs/Golgi_Ca_LVA.o
+"/home/neuron/nrn75/nrn/x86_64/bin/nocmodl" Golgi_KA
+Translating Golgi_KA.mod into Golgi_KA.c
+Thread Safe
+"/home/neuron/nrn75/nrn/share/nrn/libtool" --tag=CC --mode=compile mpicc -DHAVE_CONFIG_H  -I. -I.. -I"/home/neuron/nrn75/nrn/include/nrn" -I"/home/neuron/nrn75/nrn/x86_64/lib"      -g -O2 -c -o Golgi_KA.lo Golgi_KA.c
+libtool: compile:  mpicc -DHAVE_CONFIG_H -I. -I.. -I/home/neuron/nrn75/nrn/include/nrn -I/home/neuron/nrn75/nrn/x86_64/lib -g -O2 -c Golgi_KA.c  -fPIC -DPIC -o .libs/Golgi_KA.o
+"/home/neuron/nrn75/nrn/x86_64/bin/nocmodl" Golgi_KM
+Translating Golgi_KM.mod into Golgi_KM.c
+Thread Safe
+"/home/neuron/nrn75/nrn/share/nrn/libtool" --tag=CC --mode=compile mpicc -DHAVE_CONFIG_H  -I. -I.. -I"/home/neuron/nrn75/nrn/include/nrn" -I"/home/neuron/nrn75/nrn/x86_64/lib"      -g -O2 -c -o Golgi_KM.lo Golgi_KM.c
+libtool: compile:  mpicc -DHAVE_CONFIG_H -I. -I.. -I/home/neuron/nrn75/nrn/include/nrn -I/home/neuron/nrn75/nrn/x86_64/lib -g -O2 -c Golgi_KM.c  -fPIC -DPIC -o .libs/Golgi_KM.o
+"/home/neuron/nrn75/nrn/x86_64/bin/nocmodl" Golgi_KV
+Translating Golgi_KV.mod into Golgi_KV.c
+Thread Safe
+"/home/neuron/nrn75/nrn/share/nrn/libtool" --tag=CC --mode=compile mpicc -DHAVE_CONFIG_H  -I. -I.. -I"/home/neuron/nrn75/nrn/include/nrn" -I"/home/neuron/nrn75/nrn/x86_64/lib"      -g -O2 -c -o Golgi_KV.lo Golgi_KV.c
+libtool: compile:  mpicc -DHAVE_CONFIG_H -I. -I.. -I/home/neuron/nrn75/nrn/include/nrn -I/home/neuron/nrn75/nrn/x86_64/lib -g -O2 -c Golgi_KV.c  -fPIC -DPIC -o .libs/Golgi_KV.o
+"/home/neuron/nrn75/nrn/x86_64/bin/nocmodl" Golgi_Na
+Translating Golgi_Na.mod into Golgi_Na.c
+Thread Safe
+"/home/neuron/nrn75/nrn/share/nrn/libtool" --tag=CC --mode=compile mpicc -DHAVE_CONFIG_H  -I. -I.. -I"/home/neuron/nrn75/nrn/include/nrn" -I"/home/neuron/nrn75/nrn/x86_64/lib"      -g -O2 -c -o Golgi_Na.lo Golgi_Na.c
+libtool: compile:  mpicc -DHAVE_CONFIG_H -I. -I.. -I/home/neuron/nrn75/nrn/include/nrn -I/home/neuron/nrn75/nrn/x86_64/lib -g -O2 -c Golgi_Na.c  -fPIC -DPIC -o .libs/Golgi_Na.o
+"/home/neuron/nrn75/nrn/x86_64/bin/nocmodl" Golgi_NaP
+Translating Golgi_NaP.mod into Golgi_NaP.c
+Thread Safe
+"/home/neuron/nrn75/nrn/share/nrn/libtool" --tag=CC --mode=compile mpicc -DHAVE_CONFIG_H  -I. -I.. -I"/home/neuron/nrn75/nrn/include/nrn" -I"/home/neuron/nrn75/nrn/x86_64/lib"      -g -O2 -c -o Golgi_NaP.lo Golgi_NaP.c
+libtool: compile:  mpicc -DHAVE_CONFIG_H -I. -I.. -I/home/neuron/nrn75/nrn/include/nrn -I/home/neuron/nrn75/nrn/x86_64/lib -g -O2 -c Golgi_NaP.c  -fPIC -DPIC -o .libs/Golgi_NaP.o
+"/home/neuron/nrn75/nrn/x86_64/bin/nocmodl" Golgi_NaR
+Translating Golgi_NaR.mod into Golgi_NaR.c
+Thread Safe
+"/home/neuron/nrn75/nrn/share/nrn/libtool" --tag=CC --mode=compile mpicc -DHAVE_CONFIG_H  -I. -I.. -I"/home/neuron/nrn75/nrn/include/nrn" -I"/home/neuron/nrn75/nrn/x86_64/lib"      -g -O2 -c -o Golgi_NaR.lo Golgi_NaR.c
+libtool: compile:  mpicc -DHAVE_CONFIG_H -I. -I.. -I/home/neuron/nrn75/nrn/include/nrn -I/home/neuron/nrn75/nrn/x86_64/lib -g -O2 -c Golgi_NaR.c  -fPIC -DPIC -o .libs/Golgi_NaR.o
+Golgi_NaR.c: In function ‘_Golgi_NaR_reg’:
+Golgi_NaR.c:303:36: warning: passing argument 3 of ‘_nrn_thread_reg’ from incompatible pointer type [-Wincompatible-pointer-types]
+      _nrn_thread_reg(_mechtype, 2, _update_ion_pointer);
+                                    ^
+Golgi_NaR.c:290:13: note: expected ‘void (**)(Datum *) {aka void (**)(union Datum *)}’ but argument is of type ‘void (*)(Datum *) {aka void (*)(union Datum *)}’
+ extern void _nrn_thread_reg(int, int, void(*f)(Datum*));
+             ^
+"/home/neuron/nrn75/nrn/x86_64/bin/nocmodl" Golgi_Pregen
+Translating Golgi_Pregen.mod into Golgi_Pregen.c
+Notice: set_seed is not thread safe
+Notice: exprand is not thread safe
+"/home/neuron/nrn75/nrn/share/nrn/libtool" --tag=CC --mode=compile mpicc -DHAVE_CONFIG_H  -I. -I.. -I"/home/neuron/nrn75/nrn/include/nrn" -I"/home/neuron/nrn75/nrn/x86_64/lib"      -g -O2 -c -o Golgi_Pregen.lo Golgi_Pregen.c
+libtool: compile:  mpicc -DHAVE_CONFIG_H -I. -I.. -I/home/neuron/nrn75/nrn/include/nrn -I/home/neuron/nrn75/nrn/x86_64/lib -g -O2 -c Golgi_Pregen.c  -fPIC -DPIC -o .libs/Golgi_Pregen.o
+"/home/neuron/nrn75/nrn/x86_64/bin/nocmodl" Golgi_Pregen2
+Translating Golgi_Pregen2.mod into Golgi_Pregen2.c
+Thread Safe
+"/home/neuron/nrn75/nrn/share/nrn/libtool" --tag=CC --mode=compile mpicc -DHAVE_CONFIG_H  -I. -I.. -I"/home/neuron/nrn75/nrn/include/nrn" -I"/home/neuron/nrn75/nrn/x86_64/lib"      -g -O2 -c -o Golgi_Pregen2.lo Golgi_Pregen2.c
+libtool: compile:  mpicc -DHAVE_CONFIG_H -I. -I.. -I/home/neuron/nrn75/nrn/include/nrn -I/home/neuron/nrn75/nrn/x86_64/lib -g -O2 -c Golgi_Pregen2.c  -fPIC -DPIC -o .libs/Golgi_Pregen2.o
+"/home/neuron/nrn75/nrn/x86_64/bin/nocmodl" Golgi_SK2
+Translating Golgi_SK2.mod into Golgi_SK2.c
+NEURON's CVode method ignores conservation
+Thread Safe
+"/home/neuron/nrn75/nrn/share/nrn/libtool" --tag=CC --mode=compile mpicc -DHAVE_CONFIG_H  -I. -I.. -I"/home/neuron/nrn75/nrn/include/nrn" -I"/home/neuron/nrn75/nrn/x86_64/lib"      -g -O2 -c -o Golgi_SK2.lo Golgi_SK2.c
+libtool: compile:  mpicc -DHAVE_CONFIG_H -I. -I.. -I/home/neuron/nrn75/nrn/include/nrn -I/home/neuron/nrn75/nrn/x86_64/lib -g -O2 -c Golgi_SK2.c  -fPIC -DPIC -o .libs/Golgi_SK2.o
+"/home/neuron/nrn75/nrn/x86_64/bin/nocmodl" Golgi_hcn1
+Translating Golgi_hcn1.mod into Golgi_hcn1.c
+Thread Safe
+"/home/neuron/nrn75/nrn/share/nrn/libtool" --tag=CC --mode=compile mpicc -DHAVE_CONFIG_H  -I. -I.. -I"/home/neuron/nrn75/nrn/include/nrn" -I"/home/neuron/nrn75/nrn/x86_64/lib"      -g -O2 -c -o Golgi_hcn1.lo Golgi_hcn1.c
+libtool: compile:  mpicc -DHAVE_CONFIG_H -I. -I.. -I/home/neuron/nrn75/nrn/include/nrn -I/home/neuron/nrn75/nrn/x86_64/lib -g -O2 -c Golgi_hcn1.c  -fPIC -DPIC -o .libs/Golgi_hcn1.o
+"/home/neuron/nrn75/nrn/x86_64/bin/nocmodl" Golgi_hcn2
+Translating Golgi_hcn2.mod into Golgi_hcn2.c
+Thread Safe
+"/home/neuron/nrn75/nrn/share/nrn/libtool" --tag=CC --mode=compile mpicc -DHAVE_CONFIG_H  -I. -I.. -I"/home/neuron/nrn75/nrn/include/nrn" -I"/home/neuron/nrn75/nrn/x86_64/lib"      -g -O2 -c -o Golgi_hcn2.lo Golgi_hcn2.c
+libtool: compile:  mpicc -DHAVE_CONFIG_H -I. -I.. -I/home/neuron/nrn75/nrn/include/nrn -I/home/neuron/nrn75/nrn/x86_64/lib -g -O2 -c Golgi_hcn2.c  -fPIC -DPIC -o .libs/Golgi_hcn2.o
+"/home/neuron/nrn75/nrn/x86_64/bin/nocmodl" Golgi_lkg
+Translating Golgi_lkg.mod into Golgi_lkg.c
+Thread Safe
+"/home/neuron/nrn75/nrn/share/nrn/libtool" --tag=CC --mode=compile mpicc -DHAVE_CONFIG_H  -I. -I.. -I"/home/neuron/nrn75/nrn/include/nrn" -I"/home/neuron/nrn75/nrn/x86_64/lib"      -g -O2 -c -o Golgi_lkg.lo Golgi_lkg.c
+libtool: compile:  mpicc -DHAVE_CONFIG_H -I. -I.. -I/home/neuron/nrn75/nrn/include/nrn -I/home/neuron/nrn75/nrn/x86_64/lib -g -O2 -c Golgi_lkg.c  -fPIC -DPIC -o .libs/Golgi_lkg.o
+"/home/neuron/nrn75/nrn/x86_64/bin/nocmodl" vecevent
+Translating vecevent.mod into vecevent.c
+Notice: VERBATIM blocks are not thread safe
+"/home/neuron/nrn75/nrn/share/nrn/libtool" --tag=CC --mode=compile mpicc -DHAVE_CONFIG_H  -I. -I.. -I"/home/neuron/nrn75/nrn/include/nrn" -I"/home/neuron/nrn75/nrn/x86_64/lib"      -g -O2 -c -o vecevent.lo vecevent.c
+libtool: compile:  mpicc -DHAVE_CONFIG_H -I. -I.. -I/home/neuron/nrn75/nrn/include/nrn -I/home/neuron/nrn75/nrn/x86_64/lib -g -O2 -c vecevent.c  -fPIC -DPIC -o .libs/vecevent.o
+"/home/neuron/nrn75/nrn/x86_64/bin/nocmodl" GRANULE_Ampa_det_Prel
+Translating GRANULE_Ampa_det_Prel.mod into GRANULE_Ampa_det_Prel.c
+NEURON's CVode method ignores conservation
+Thread Safe
+"/home/neuron/nrn75/nrn/share/nrn/libtool" --tag=CC --mode=compile mpicc -DHAVE_CONFIG_H  -I. -I.. -I"/home/neuron/nrn75/nrn/include/nrn" -I"/home/neuron/nrn75/nrn/x86_64/lib"      -g -O2 -c -o GRANULE_Ampa_det_Prel.lo GRANULE_Ampa_det_Prel.c
+libtool: compile:  mpicc -DHAVE_CONFIG_H -I. -I.. -I/home/neuron/nrn75/nrn/include/nrn -I/home/neuron/nrn75/nrn/x86_64/lib -g -O2 -c GRANULE_Ampa_det_Prel.c  -fPIC -DPIC -o .libs/GRANULE_Ampa_det_Prel.o
+"/home/neuron/nrn75/nrn/x86_64/bin/nocmodl" GRANULE_Ampa_det_vi
+Translating GRANULE_Ampa_det_vi.mod into GRANULE_Ampa_det_vi.c
+NEURON's CVode method ignores conservation
+Thread Safe
+"/home/neuron/nrn75/nrn/share/nrn/libtool" --tag=CC --mode=compile mpicc -DHAVE_CONFIG_H  -I. -I.. -I"/home/neuron/nrn75/nrn/include/nrn" -I"/home/neuron/nrn75/nrn/x86_64/lib"      -g -O2 -c -o GRANULE_Ampa_det_vi.lo GRANULE_Ampa_det_vi.c
+libtool: compile:  mpicc -DHAVE_CONFIG_H -I. -I.. -I/home/neuron/nrn75/nrn/include/nrn -I/home/neuron/nrn75/nrn/x86_64/lib -g -O2 -c GRANULE_Ampa_det_vi.c  -fPIC -DPIC -o .libs/GRANULE_Ampa_det_vi.o
+"/home/neuron/nrn75/nrn/x86_64/bin/nocmodl" GRANULE_Ampa_stoch_vi
+Translating GRANULE_Ampa_stoch_vi.mod into GRANULE_Ampa_stoch_vi.c
+NEURON's CVode method ignores conservation
+Thread Safe
+"/home/neuron/nrn75/nrn/share/nrn/libtool" --tag=CC --mode=compile mpicc -DHAVE_CONFIG_H  -I. -I.. -I"/home/neuron/nrn75/nrn/include/nrn" -I"/home/neuron/nrn75/nrn/x86_64/lib"      -g -O2 -c -o GRANULE_Ampa_stoch_vi.lo GRANULE_Ampa_stoch_vi.c
+libtool: compile:  mpicc -DHAVE_CONFIG_H -I. -I.. -I/home/neuron/nrn75/nrn/include/nrn -I/home/neuron/nrn75/nrn/x86_64/lib -g -O2 -c GRANULE_Ampa_stoch_vi.c  -fPIC -DPIC -o .libs/GRANULE_Ampa_stoch_vi.o
+"/home/neuron/nrn75/nrn/x86_64/bin/nocmodl" GRANULE_Gaba_det_vi
+Translating GRANULE_Gaba_det_vi.mod into GRANULE_Gaba_det_vi.c
+NEURON's CVode method ignores conservation
+Thread Safe
+"/home/neuron/nrn75/nrn/share/nrn/libtool" --tag=CC --mode=compile mpicc -DHAVE_CONFIG_H  -I. -I.. -I"/home/neuron/nrn75/nrn/include/nrn" -I"/home/neuron/nrn75/nrn/x86_64/lib"      -g -O2 -c -o GRANULE_Gaba_det_vi.lo GRANULE_Gaba_det_vi.c
+libtool: compile:  mpicc -DHAVE_CONFIG_H -I. -I.. -I/home/neuron/nrn75/nrn/include/nrn -I/home/neuron/nrn75/nrn/x86_64/lib -g -O2 -c GRANULE_Gaba_det_vi.c  -fPIC -DPIC -o .libs/GRANULE_Gaba_det_vi.o
+"/home/neuron/nrn75/nrn/x86_64/bin/nocmodl" GRANULE_Nmda_det_vi
+Translating GRANULE_Nmda_det_vi.mod into GRANULE_Nmda_det_vi.c
+NEURON's CVode method ignores conservation
+Thread Safe
+"/home/neuron/nrn75/nrn/share/nrn/libtool" --tag=CC --mode=compile mpicc -DHAVE_CONFIG_H  -I. -I.. -I"/home/neuron/nrn75/nrn/include/nrn" -I"/home/neuron/nrn75/nrn/x86_64/lib"      -g -O2 -c -o GRANULE_Nmda_det_vi.lo GRANULE_Nmda_det_vi.c
+libtool: compile:  mpicc -DHAVE_CONFIG_H -I. -I.. -I/home/neuron/nrn75/nrn/include/nrn -I/home/neuron/nrn75/nrn/x86_64/lib -g -O2 -c GRANULE_Nmda_det_vi.c  -fPIC -DPIC -o .libs/GRANULE_Nmda_det_vi.o
+"/home/neuron/nrn75/nrn/x86_64/bin/nocmodl" GRANULE_Nmda_leak
+Translating GRANULE_Nmda_leak.mod into GRANULE_Nmda_leak.c
+Thread Safe
+"/home/neuron/nrn75/nrn/share/nrn/libtool" --tag=CC --mode=compile mpicc -DHAVE_CONFIG_H  -I. -I.. -I"/home/neuron/nrn75/nrn/include/nrn" -I"/home/neuron/nrn75/nrn/x86_64/lib"      -g -O2 -c -o GRANULE_Nmda_leak.lo GRANULE_Nmda_leak.c
+libtool: compile:  mpicc -DHAVE_CONFIG_H -I. -I.. -I/home/neuron/nrn75/nrn/include/nrn -I/home/neuron/nrn75/nrn/x86_64/lib -g -O2 -c GRANULE_Nmda_leak.c  -fPIC -DPIC -o .libs/GRANULE_Nmda_leak.o
+"/home/neuron/nrn75/nrn/x86_64/bin/nocmodl" GRANULE_Nmda_stoch_vi
+Translating GRANULE_Nmda_stoch_vi.mod into GRANULE_Nmda_stoch_vi.c
+Notice: Use of POINTER is not thread safe.
+NEURON's CVode method ignores conservation
+"/home/neuron/nrn75/nrn/share/nrn/libtool" --tag=CC --mode=compile mpicc -DHAVE_CONFIG_H  -I. -I.. -I"/home/neuron/nrn75/nrn/include/nrn" -I"/home/neuron/nrn75/nrn/x86_64/lib"      -g -O2 -c -o GRANULE_Nmda_stoch_vi.lo GRANULE_Nmda_stoch_vi.c
+libtool: compile:  mpicc -DHAVE_CONFIG_H -I. -I.. -I/home/neuron/nrn75/nrn/include/nrn -I/home/neuron/nrn75/nrn/x86_64/lib -g -O2 -c GRANULE_Nmda_stoch_vi.c  -fPIC -DPIC -o .libs/GRANULE_Nmda_stoch_vi.o
+"/home/neuron/nrn75/nrn/x86_64/bin/nocmodl" Golgi_PF_AMPA
+Translating Golgi_PF_AMPA.mod into Golgi_PF_AMPA.c
+Warning: celsius undefined. (declared within VERBATIM?)
+Thread Safe
+"/home/neuron/nrn75/nrn/share/nrn/libtool" --tag=CC --mode=compile mpicc -DHAVE_CONFIG_H  -I. -I.. -I"/home/neuron/nrn75/nrn/include/nrn" -I"/home/neuron/nrn75/nrn/x86_64/lib"      -g -O2 -c -o Golgi_PF_AMPA.lo Golgi_PF_AMPA.c
+libtool: compile:  mpicc -DHAVE_CONFIG_H -I. -I.. -I/home/neuron/nrn75/nrn/include/nrn -I/home/neuron/nrn75/nrn/x86_64/lib -g -O2 -c Golgi_PF_AMPA.c  -fPIC -DPIC -o .libs/Golgi_PF_AMPA.o
+"/home/neuron/nrn75/nrn/x86_64/bin/nocmodl" Golgi_PF_NMDA
+Translating Golgi_PF_NMDA.mod into Golgi_PF_NMDA.c
+Warning: celsius undefined. (declared within VERBATIM?)
+Notice: Assignment to the GLOBAL variable, "total", is not thread safe
+"/home/neuron/nrn75/nrn/share/nrn/libtool" --tag=CC --mode=compile mpicc -DHAVE_CONFIG_H  -I. -I.. -I"/home/neuron/nrn75/nrn/include/nrn" -I"/home/neuron/nrn75/nrn/x86_64/lib"      -g -O2 -c -o Golgi_PF_NMDA.lo Golgi_PF_NMDA.c
+libtool: compile:  mpicc -DHAVE_CONFIG_H -I. -I.. -I/home/neuron/nrn75/nrn/include/nrn -I/home/neuron/nrn75/nrn/x86_64/lib -g -O2 -c Golgi_PF_NMDA.c  -fPIC -DPIC -o .libs/Golgi_PF_NMDA.o
+"/home/neuron/nrn75/nrn/x86_64/bin/nocmodl" gapj
+Translating gapj.mod into gapj.c
+Thread Safe
+"/home/neuron/nrn75/nrn/share/nrn/libtool" --tag=CC --mode=compile mpicc -DHAVE_CONFIG_H  -I. -I.. -I"/home/neuron/nrn75/nrn/include/nrn" -I"/home/neuron/nrn75/nrn/x86_64/lib"      -g -O2 -c -o gapj.lo gapj.c
+libtool: compile:  mpicc -DHAVE_CONFIG_H -I. -I.. -I/home/neuron/nrn75/nrn/include/nrn -I/home/neuron/nrn75/nrn/x86_64/lib -g -O2 -c gapj.c  -fPIC -DPIC -o .libs/gapj.o
+"/home/neuron/nrn75/nrn/share/nrn/libtool" --tag=CC --mode=compile mpicc -DHAVE_CONFIG_H  -I. -I.. -I"/home/neuron/nrn75/nrn/include/nrn" -I"/home/neuron/nrn75/nrn/x86_64/lib"      -g -O2 -c -o mod_func.lo mod_func.c
+libtool: compile:  mpicc -DHAVE_CONFIG_H -I. -I.. -I/home/neuron/nrn75/nrn/include/nrn -I/home/neuron/nrn75/nrn/x86_64/lib -g -O2 -c mod_func.c  -fPIC -DPIC -o .libs/mod_func.o
+"/home/neuron/nrn75/nrn/share/nrn/libtool" --tag=CC --mode=link mpicc -module  -g -O2    -o libnrnmech.la -rpath "/home/neuron/nrn75/nrn/x86_64/lib"  Golgi_BK.lo Golgi_CALC.lo Golgi_CALC_ca2.lo Golgi_Ca_HVA.lo Golgi_Ca_LVA.lo Golgi_KA.lo Golgi_KM.lo Golgi_KV.lo Golgi_Na.lo Golgi_NaP.lo Golgi_NaR.lo Golgi_Pregen.lo Golgi_Pregen2.lo Golgi_SK2.lo Golgi_hcn1.lo Golgi_hcn2.lo Golgi_lkg.lo vecevent.lo GRANULE_Ampa_det_Prel.lo GRANULE_Ampa_det_vi.lo GRANULE_Ampa_stoch_vi.lo GRANULE_Gaba_det_vi.lo GRANULE_Nmda_det_vi.lo GRANULE_Nmda_leak.lo GRANULE_Nmda_stoch_vi.lo Golgi_PF_AMPA.lo Golgi_PF_NMDA.lo gapj.lo mod_func.lo  -L"/home/neuron/nrn75/nrn/x86_64/lib" -lnrnoc -loc -lmemacs -lnrnmpi -lscopmath -lsparse13 -lreadline -lncurses -L"/home/neuron/nrn75/nrn/x86_64/lib" "/home/neuron/nrn75/nrn/x86_64/lib/libnrniv.la" -livoc -lneuron_gnu -lmeschach -lsundials -livos      -lm -ldl
+libtool: link: mpicc -shared  -fPIC -DPIC  .libs/Golgi_BK.o .libs/Golgi_CALC.o .libs/Golgi_CALC_ca2.o .libs/Golgi_Ca_HVA.o .libs/Golgi_Ca_LVA.o .libs/Golgi_KA.o .libs/Golgi_KM.o .libs/Golgi_KV.o .libs/Golgi_Na.o .libs/Golgi_NaP.o .libs/Golgi_NaR.o .libs/Golgi_Pregen.o .libs/Golgi_Pregen2.o .libs/Golgi_SK2.o .libs/Golgi_hcn1.o .libs/Golgi_hcn2.o .libs/Golgi_lkg.o .libs/vecevent.o .libs/GRANULE_Ampa_det_Prel.o .libs/GRANULE_Ampa_det_vi.o .libs/GRANULE_Ampa_stoch_vi.o .libs/GRANULE_Gaba_det_vi.o .libs/GRANULE_Nmda_det_vi.o .libs/GRANULE_Nmda_leak.o .libs/GRANULE_Nmda_stoch_vi.o .libs/Golgi_PF_AMPA.o .libs/Golgi_PF_NMDA.o .libs/gapj.o .libs/mod_func.o   -Wl,-rpath -Wl,/home/neuron/nrn75/nrn/x86_64/lib -Wl,-rpath -Wl,/home/neuron/nrn75/nrn/x86_64/lib -L/home/neuron/nrn75/nrn/x86_64/lib /home/neuron/nrn75/nrn/x86_64/lib/libnrnoc.so /home/neuron/nrn75/nrn/x86_64/lib/liboc.so /home/neuron/nrn75/nrn/x86_64/lib/libmemacs.so /home/neuron/nrn75/nrn/x86_64/lib/libnrnmpi.so /home/neuron/nrn75/nrn/x86_64/lib/libscopmath.so /home/neuron/nrn75/nrn/x86_64/lib/libsparse13.so -lreadline -lncurses /home/neuron/nrn75/nrn/x86_64/lib/libnrniv.so /home/neuron/nrn75/nrn/x86_64/lib/libivoc.so /home/neuron/nrn75/nrn/x86_64/lib/libneuron_gnu.so /home/neuron/nrn75/nrn/x86_64/lib/libmeschach.so /home/neuron/nrn75/nrn/x86_64/lib/libsundials.so /home/neuron/nrn75/nrn/x86_64/lib/libivos.so -lm -ldl  -g -O2   -pthread -Wl,-soname -Wl,libnrnmech.so.0 -o .libs/libnrnmech.so.0.0.0
+libtool: link: (cd ".libs" && rm -f "libnrnmech.so.0" && ln -s "libnrnmech.so.0.0.0" "libnrnmech.so.0")
+libtool: link: (cd ".libs" && rm -f "libnrnmech.so" && ln -s "libnrnmech.so.0.0.0" "libnrnmech.so")
+libtool: link: ( cd ".libs" && rm -f "libnrnmech.la" && ln -s "../libnrnmech.la" "libnrnmech.la" )
+Successfully created x86_64/special

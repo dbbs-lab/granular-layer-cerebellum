@@ -1,0 +1,33 @@
+#! /bin/bash
+
+case `hostname | head -c 3` in 
+    fen) 
+	echo fermi
+	module load profile/advanced
+	module load bgq-xl
+	# module load neuron
+
+	# Hines compiled in FERMI
+	/gpfs/work/IscrB_3DBULB/neuron/mpi/powerpc64/bin/nrnivmodl  templates/granule/ templates/golgi/ templates/mossy/ templates/gapj/ templates/synapse/ templates/mli 2>&1 | tee nrncompile.log
+	
+
+	# Solinas compiled on FERMI
+	# /gpfs/scratch/userexternal/ssolinas/neuron/nrnmpignu_xl_stdpy/powerpc64/bin/nrnivmodl  templates/granule/ templates/golgi/ templates/mossy/ templates/gapj/ templates/synapse/ templates/mli 2>&1 | tee nrncompile.log
+
+	#/gpfs/scratch/userexternal/ssolinas/neuron/nrnmpignu_xl/powerpc64/bin/nrnivmodl  templates/granule/ templates/golgi/ templates/mossy/ templates/gapj/ templates/synapse/ templates/mli 2>&1 | tee nrncompile.log
+        # /fermi/home/userexternal/ssolinas/local/nrn7.3_xl_p2013/powerpc64/bin/nrnivmodl  templates/granule/ templates/golgi/ templates/mossy/ templates/gapj/ templates/synapse/ templates/mli 2>&1 | tee nrncompile.log
+        # module unload bgq-xl
+
+	module unload profile/advanced
+	module unload bgq-xl
+        # module unload neuron
+	;;
+    bla)
+	echo cerfoglio
+	nrnivmodl  templates/granule/ templates/golgi/ templates/mossy/ templates/mossy_old/ templates/gapj/ templates/synapse/ templates/mli 2>&1 | tee nrncompile.log
+	;;
+    ott)
+	echo otto
+	nrnivmodl . ../granule ../synapse/ 2>&1 | tee nrncompile.log
+	;;
+esac

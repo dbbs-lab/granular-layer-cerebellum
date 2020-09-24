@@ -1,0 +1,3 @@
+/mnt/scratch2/test/sim_dir_1600869133_461566595/weasel
+/mnt/scratch2/test/sim_dir_1600873411_875478857/weasel
+/mnt/scratch2/test/sim_dir_1600873715_828872016/weasel

@@ -1,0 +1,1 @@
+../templates/synapse//GRANULE_Gaba_det_vi.mod

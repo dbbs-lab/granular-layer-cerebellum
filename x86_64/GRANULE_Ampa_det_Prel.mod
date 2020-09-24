@@ -1,0 +1,1 @@
+../templates/synapse//GRANULE_Ampa_det_Prel.mod

@@ -1,0 +1,87 @@
+begintemplate sensory_fiber
+
+public fiber,rosette,skin
+public SpikeTrain_input, SpikeTrain_output
+public coord, syn_grc, syn_goc, src_goc,release_sites
+
+
+create fiber
+
+objref SpikeTrain_input, SpikeTrain_output, coord
+objref syn_grc, syn_goc, src_goc, netcon_in, netcon_out, nil
+objref rosette,skin,release_sites, nc_rel, nc_sensory
+objref nc_sensory_noise, nc_sensory_stopnoise, noise
+objref point
+
+proc init() {
+    
+     fiber {
+	nseg = 1 
+	diam = 1
+	L = 1
+	nrel = $1
+	background = 10
+	
+	coord = new Vector(3)
+	coord.x[0] = 0
+	coord.x[1] = 0
+	coord.x[2] = 0
+	
+	
+	skin = new NetStim(0.5)
+	skin.start = -10
+	skin.noise = 0
+	skin.number = 5
+	skin.interval = 1e3/500
+	point = new Pointer(&skin.number)
+	
+	noise = new NetStim_priority(0.5)
+	noise.start = 0
+	noise.noise = 1
+	noise.number = 1e9
+	noise.count_down_spikes = point.val
+	noise.interval = 1e3/background
+	
+	rosette = new NetStim(0.5)
+	rosette.start = -10
+	rosette.number = 1
+	rosette.interval = 1e9
+	
+	nc_sensory = new NetCon(skin,rosette,0,0,1)
+	nc_sensory_noise = new NetCon(noise,rosette,0,0,1)
+	nc_sensory_stopnoise = new NetCon(skin,noise,0,0,0)
+	
+	release_sites = new List()
+	SpikeTrain_output = new List()
+	netcon_out = new List()
+	nc_rel = new List()
+	for i = 0,nrel-1 {
+	    release_sites.append(new Release_site(0.5))
+	    release_sites.o(i).U = 0.42
+	    SpikeTrain_output.append(new List())
+	    SpikeTrain_output.o(i).append(new Vector())
+	    SpikeTrain_output.o(i).append(new Vector())
+	    netcon_out.append(new NetCon(release_sites.o(i),nil))
+	    nc_rel.append(new NetCon(rosette,release_sites.o(i)),0,0,1)
+	    netcon_out.o(i).record(SpikeTrain_output.o(i).o(1),SpikeTrain_output.o(i).o(0),i+2)
+	}
+
+	syn_grc = new List()
+	syn_goc = new List()
+	src_goc = new List()
+	
+	SpikeTrain_input = new List()
+	SpikeTrain_input.append(new Vector())
+	SpikeTrain_input.append(new Vector())
+	netcon_in = new NetCon(rosette,nil)
+	netcon_in.record(SpikeTrain_input.o(1), SpikeTrain_input.o(0), 1)
+    }
+}
+
+proc prel() {
+	for i = 0,nrel-1 {
+	    release_sites.o(i).U = 0.42
+	}
+}    
+
+endtemplate sensory_fiber

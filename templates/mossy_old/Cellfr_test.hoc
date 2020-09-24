@@ -1,0 +1,20 @@
+xopen("$(NEURONHOME)/lib/hoc/noload.hoc")
+
+objref fr, stim, nc
+stim = new NetStim(0.5)
+stim.noise = 1
+stim.interval = 1e3/20
+stim.start = 10
+stim.number = 1e9
+
+fr = new Cellfr(0.5)
+
+nc = new NetCon(stim,fr,0,0,1)
+
+tstop = 10
+run()
+for i = 0,3000 {
+    print fr.fr
+    stim.interval = 1e3/(20+i)
+    continuerun(t+100)
+}
